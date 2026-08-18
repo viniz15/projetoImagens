@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +18,8 @@
 
             <label for="nome">Nome do Produto</label>
             <input type="text" name="nome" id="nome">
+            <label for="nome">Valor do Produto</label>
+            <input type="text" name="valor" id="valor">
             <label for="desc">Descrição do Produto...</label>
             <input type="text" name="desc" id="desc">
             <textarea name="desc" id="desc"></textarea>
