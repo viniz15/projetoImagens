@@ -4,7 +4,7 @@ class Produto_class{
 
     private $pdo
 
-    public function_constructor($dbname, $host, $dbuser, $dbpass) {
+    public function_construct($dbname, $host, $dbuser, $dbpass,) {
         try {
             $this->pdo = new PDO("mysql:dbname=".dbname.";host=".$host,$dbuser,$dbpass);
             

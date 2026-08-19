@@ -16,15 +16,25 @@
 
             <h1>ENVIO DE IMAGENS</h1>
 
-            <label for="nome">Nome do Produto</label>
-            <input type="text" name="nome" id="nome">
-            <label for="nome">Valor do Produto</label>
-            <input type="text" name="valor" id="valor">
-            <label for="desc">Descrição do Produto...</label>
-            <input type="text" name="desc" id="desc">
-            <textarea name="desc" id="desc"></textarea>
-            <input type="file" name="foto[]" multiple id="foto">
-            <input type="submit" id="botao">
+            <div class="container">
+
+                <label for="nome">Nome do Produto</label>
+                <input type="text" name="nome" id="nome">
+
+                <div class="row">
+                    <label for="nome">Valor do Produto</label>
+                    <input type="number" step="0.01" name="valor" id="valor">
+                </div>
+                
+
+                <label for="desc">Descrição do Produto</label>
+                <textarea name="desc" id="desc"></textarea>
+                
+                <input type="file" name="foto[]" multiple id="foto">
+                
+                <input type="submit" id="botao">
+
+            </div>
 
         </form>
         
@@ -35,8 +45,17 @@
 
 <?php
 
-if (isset($_POST['nome'])) {
-    # code...
-}
+// if (isset($_POST['nome'])) {
+//     $nome = addcslashes($_POST['nome']);
+//     $descricao = addcslashes($_POST['desc']);
+//     $fotos = array();
+
+//     if (isset($_FILES['foto'])) {
+//         for ($i=0; $i < ; $i++) { 
+//         
+//         }
+//     }
+
+// }
 
 ?>
